@@ -235,10 +235,6 @@ var Share =  {
                 params.description = Share.getMetaContentByName('description');
             }
 
-            if(params.url === undefined) {
-                params.url = Share.getMetaContentByName('image');
-            }
-
             if(params.image === undefined) {
                 params.image = Share.getMetaContentByName('image');
             }
