@@ -13,6 +13,18 @@
     <script src="js/clipboard.min.js"></script>
     <script src="js/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+
+    <meta name="title" content="Multi Social Share JS"/>
+    <meta name="image" content="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png"/>
+    <meta name="description" content="Simple dependency free multi social share script">
+    <meta name="app-name" content="Multi Social Share JS"/>
+    <meta name="app-hash-tags" content="multi-social-share-js"/>
+
+    <meta property="og:url" content="https://adrianbarbos.github.io/multi-social-share-js"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Multi Social Share JS"/>
+    <meta property="og:description" content="Simple dependency free multi social share script"/>
+    <meta property="og:image" content="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png"/>
 </head>
 <body>
 
@@ -31,17 +43,14 @@
                     <a href="#instalation" class="nav-item">
                         Instalation
                     </a>
-                    <a href="#override-params" class="nav-item">
-                        Override params
-                    </a>
-                    <a class="nav-item">
+                    <a href="#examples" class="nav-item">
                         Examples
                     </a>
-                    <a class="nav-item">
+                    <a href="https://github.com/adrianbarbos/multi-social-share-js/archive/master.zip" class="nav-item" download>
                         Download
                     </a>
                     <span class="nav-item">
-                            <a class="button is-primary is-inverted">
+                            <a href="https://github.com/adrianbarbos/multi-social-share-js" class="button is-primary is-inverted" target="_blank">
                               <span class="icon">
                                 <i class="fa fa-github"></i>
                               </span>
@@ -124,26 +133,6 @@
     </div>
 </section>
 
-<section class="section" id="override-params">
-    <div class="container">
-        <h2 class="title">Override params</h2>
-
-        <br>
-        <pre><code class="javascript">
-    Share.facebook({
-        url: '', // default current location
-        title: '', // default title meta tag
-        description: '', // default description meta tag
-        image: '', // default image meta tag
-        via: '', // default app-name meta tag
-        hashtags: '', // default app-hash-tags meta tag
-    });
-        </code></pre>
-    </div>
-</section>
-
-
-
 <section class="section" id="examples">
     <div class="container">
         <h2 class="title">Examples</h2>
@@ -151,85 +140,610 @@
         <div class="columns is-multiline is-mobile">
 
             <div class="column is-2-desktop is-3-tablet is-6-mobile has-text-centered">
-                <a class="box" href="Facebook">
+                <a class="box" href="#Facebook">
                     Facebook
                 </a>
             </div>
 
             <div class="column is-2-desktop is-3-tablet is-6-mobile has-text-centered">
-                <a class="box" href="Twitter">
+                <a class="box" href="#Twitter">
                     Twitter
                 </a>
             </div>
 
             <div class="column is-2-desktop is-3-tablet is-6-mobile has-text-centered">
-                <a class="box" href="Google">
+                <a class="box" href="#Google">
                     Google
                 </a>
             </div>
 
             <div class="column is-2-desktop is-3-tablet is-6-mobile has-text-centered">
-                <a class="box" href="Pinterest">
+                <a class="box" href="#Pinterest">
                     Pinterest
                 </a>
             </div>
 
             <div class="column is-2-desktop is-3-tablet is-6-mobile has-text-centered">
-                <a class="box" href="LinkedIn">
+                <a class="box" href="#LinkedIn">
                     LinkedIn
                 </a>
             </div>
 
             <div class="column is-2-desktop is-3-tablet is-6-mobile has-text-centered">
-                <a class="box" href="BufferApp">
+                <a class="box" href="#BufferApp">
                     BufferApp
                 </a>
             </div>
 
             <div class="column is-2-desktop is-3-tablet is-6-mobile has-text-centered">
-                <a class="box" href="Tumblr">
+                <a class="box" href="#Tumblr">
                     Tumblr
                 </a>
             </div>
 
             <div class="column is-2-desktop is-3-tablet is-6-mobile has-text-centered">
-                <a class="box" href="Reddit">
+                <a class="box" href="#Reddit">
                     Reddit
                 </a>
             </div>
 
             <div class="column is-2-desktop is-3-tablet is-6-mobile has-text-centered">
-                <a class="box" href="StumbleUpon">
+                <a class="box" href="#StumbleUpon">
                     StumbleUpon
                 </a>
             </div>
 
             <div class="column is-2-desktop is-3-tablet is-6-mobile has-text-centered">
-                <a class="box" href="Evernote">
+                <a class="box" href="#Evernote">
                     Evernote
                 </a>
             </div>
 
             <div class="column is-2-desktop is-3-tablet is-6-mobile has-text-centered">
-                <a class="box" href="Email">
+                <a class="box" href="#Email">
                     Email
                 </a>
             </div>
 
             <div class="column is-2-desktop is-3-tablet is-6-mobile has-text-centered">
-                <a class="box" href="Wordpress">
+                <a class="box" href="#Wordpress">
                     Wordpress
                 </a>
             </div>
 
             <div class="column is-2-desktop is-3-tablet is-6-mobile has-text-centered">
-                <a class="box" href="Pocket">
+                <a class="box" href="#Pocket">
                     Pocket
                 </a>
             </div>
         </div>
 
 
+    </div>
+</section>
+
+<section class="section" id="Facebook">
+    <div class="container">
+        <div class="columns is-mobile is-multiline">
+            <div class="column  is-3-desktop is-12-tablet is-12-mobileis-3-desktop is-12-tablet is-12-mobile">
+                <h2 class="title">Facebook</h2>
+                <p>
+                    <button class="button is-primary" onclick="Share.facebook()">Share on facebook</button>
+                </p>
+                <br>
+                <p>
+                    <a href="" onclick="Share.facebook(); return false;">Share on facebook</a>
+                </p>
+            </div>
+            <div class="column is-9-desktop is-12-tablet is-12-mobil is-9-desktop is-12-tablet is-12-mobilee">
+                <pre><code class="html">
+    &lt;html&gt;
+        &lt;head&gt;
+            ...
+        &lt;/head&gt;
+        &lt;body&gt;
+        ...
+        &lt;button onclick="Share.facebook(); return false;"&gt; Share on facebook &lt;/button&gt;
+
+        &lt;a href="" onclick="Share.facebook();"&gt; Share on facebook &lt;/a&gt;
+        ...
+        &lt;/body&gt;
+    &lt;/html&gt;
+        </code></pre>
+                <br>
+                <pre><code class="javascript">
+    Share.facebook({
+        url: '' // default current location
+    });
+        </code></pre>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="Twitter">
+    <div class="container">
+        <div class="columns is-mobile is-multiline">
+            <div class="column is-3-desktop is-12-tablet is-12-mobile">
+                <h2 class="title">Twitter</h2>
+                <p>
+                    <button class="button is-primary" onclick="Share.twitter()">Share on twitter</button>
+                </p>
+                <br>
+                <p>
+                    <a href="" onclick="Share.twitter(); return false;">Share on twitter</a>
+                </p>
+            </div>
+            <div class="column is-9-desktop is-12-tablet is-12-mobile">
+                <pre><code class="html">
+    &lt;html&gt;
+        &lt;head&gt;
+            ...
+        &lt;/head&gt;
+        &lt;body&gt;
+        ...
+        &lt;button onclick="Share.twitter(); return false;"&gt; Share on twitter &lt;/button&gt;
+
+        &lt;a href="" onclick="Share.twitter();"&gt; Share on twitter &lt;/a&gt;
+        ...
+        &lt;/body&gt;
+    &lt;/html&gt;
+        </code></pre>
+                <br>
+                <pre><code class="javascript">
+    Share.twitter({
+        url: '', // default current location
+        title: '', // default title meta tag
+        via: '', // default app-name meta tag
+        hashtags: '' // default app-hash-tags meta tag
+    });
+        </code></pre>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="Google">
+    <div class="container">
+        <div class="columns is-mobile is-multiline">
+            <div class="column is-3-desktop is-12-tablet is-12-mobile">
+                <h2 class="title">Google</h2>
+                <p>
+                    <button class="button is-primary" onclick="Share.google()">Share on google</button>
+                </p>
+                <br>
+                <p>
+                    <a href="" onclick="Share.google(); return false;">Share on google</a>
+                </p>
+            </div>
+            <div class="column is-9-desktop is-12-tablet is-12-mobile">
+                <pre><code class="html">
+    &lt;html&gt;
+        &lt;head&gt;
+            ...
+        &lt;/head&gt;
+        &lt;body&gt;
+        ...
+        &lt;button onclick="Share.google(); return false;"&gt; Share on google &lt;/button&gt;
+
+        &lt;a href="" onclick="Share.google();"&gt; Share on google &lt;/a&gt;
+        ...
+        &lt;/body&gt;
+    &lt;/html&gt;
+        </code></pre>
+                <br>
+                <pre><code class="javascript">
+    Share.google({
+        url: '' // default current location
+    });
+        </code></pre>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="Pinterest">
+    <div class="container">
+        <div class="columns is-mobile is-multiline">
+            <div class="column is-3-desktop is-12-tablet is-12-mobile">
+                <h2 class="title">Pinterest</h2>
+                <p>
+                    <button class="button is-primary" onclick="Share.pinterest()">Share on pinterest</button>
+                </p>
+                <br>
+                <p>
+                    <a href="" onclick="Share.pinterest(); return false;">Share on pinterest</a>
+                </p>
+            </div>
+            <div class="column is-9-desktop is-12-tablet is-12-mobile">
+                <pre><code class="html">
+    &lt;html&gt;
+        &lt;head&gt;
+            ...
+        &lt;/head&gt;
+        &lt;body&gt;
+        ...
+        &lt;button onclick="Share.pinterest(); return false;"&gt; Share on pinterest &lt;/button&gt;
+
+        &lt;a href="" onclick="Share.pinterest();"&gt; Share on pinterest &lt;/a&gt;
+        ...
+        &lt;/body&gt;
+    &lt;/html&gt;
+        </code></pre>
+                <br>
+                <pre><code class="javascript">
+    Share.pinterest({
+        url: '', // default current location
+        title: '', // default title meta tag
+        image: '' // default image meta tag
+    });
+        </code></pre>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="LinkedIn">
+    <div class="container">
+        <div class="columns is-mobile is-multiline">
+            <div class="column is-3-desktop is-12-tablet is-12-mobile">
+                <h2 class="title">LinkedIn</h2>
+                <p>
+                    <button class="button is-primary" onclick="Share.linkedIn()">Share on linkedIn</button>
+                </p>
+                <br>
+                <p>
+                    <a href="" onclick="Share.linkedIn(); return false;">Share on linkedIn</a>
+                </p>
+            </div>
+            <div class="column is-9-desktop is-12-tablet is-12-mobile">
+                <pre><code class="html">
+    &lt;html&gt;
+        &lt;head&gt;
+            ...
+        &lt;/head&gt;
+        &lt;body&gt;
+        ...
+        &lt;button onclick="Share.linkedIn(); return false;"&gt; Share on linkedIn &lt;/button&gt;
+
+        &lt;a href="" onclick="Share.linkedIn();"&gt; Share on linkedIn &lt;/a&gt;
+        ...
+        &lt;/body&gt;
+    &lt;/html&gt;
+        </code></pre>
+                <br>
+                <pre><code class="javascript">
+    Share.linkedIn({
+        url: '', // default current location
+        title: '' // default title meta tag
+    });
+        </code></pre>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="BufferApp">
+    <div class="container">
+        <div class="columns is-mobile is-multiline">
+            <div class="column is-3-desktop is-12-tablet is-12-mobile">
+                <h2 class="title">BufferApp</h2>
+                <p>
+                    <button class="button is-primary" onclick="Share.bufferApp()">Share on bufferApp</button>
+                </p>
+                <br>
+                <p>
+                    <a href="" onclick="Share.bufferApp(); return false;">Share on bufferApp</a>
+                </p>
+            </div>
+            <div class="column is-9-desktop is-12-tablet is-12-mobile">
+                <pre><code class="html">
+    &lt;html&gt;
+        &lt;head&gt;
+            ...
+        &lt;/head&gt;
+        &lt;body&gt;
+        ...
+        &lt;button onclick="Share.bufferApp(); return false;"&gt; Share on bufferApp &lt;/button&gt;
+
+        &lt;a href="" onclick="Share.bufferApp();"&gt; Share on bufferApp &lt;/a&gt;
+        ...
+        &lt;/body&gt;
+    &lt;/html&gt;
+        </code></pre>
+                <br>
+                <pre><code class="html">
+    Share.bufferApp({
+        url: '', // default current location
+        title: '' // default title meta tag
+    });
+        </code></pre>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="Tumblr">
+    <div class="container">
+        <div class="columns is-mobile is-multiline">
+            <div class="column is-3-desktop is-12-tablet is-12-mobile">
+                <h2 class="title">Tumblr</h2>
+                <p>
+                    <button class="button is-primary" onclick="Share.tumblr()">Share on tumblr</button>
+                </p>
+                <br>
+                <p>
+                    <a href="" onclick="Share.tumblr(); return false;">Share on tumblr</a>
+                </p>
+            </div>
+            <div class="column is-9-desktop is-12-tablet is-12-mobile">
+                <pre><code class="html">
+    &lt;html&gt;
+        &lt;head&gt;
+            ...
+        &lt;/head&gt;
+        &lt;body&gt;
+        ...
+        &lt;button onclick="Share.tumblr(); return false;"&gt; Share on tumblr &lt;/button&gt;
+
+        &lt;a href="" onclick="Share.tumblr();"&gt; Share on tumblr &lt;/a&gt;
+        ...
+        &lt;/body&gt;
+    &lt;/html&gt;
+        </code></pre>
+                <br>
+                <pre><code class="javascript">
+    Share.tumblr({
+        url: '', // default current location
+        title: '', // default title meta tag
+        description: '' // default description meta tag
+    });
+        </code></pre>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="Reddit">
+    <div class="container">
+        <div class="columns is-mobile is-multiline">
+            <div class="column is-3-desktop is-12-tablet is-12-mobile">
+                <h2 class="title">Reddit</h2>
+                <p>
+                    <button class="button is-primary" onclick="Share.reddit()">Share on reddit</button>
+                </p>
+                <br>
+                <p>
+                    <a href="" onclick="Share.reddit(); return false;">Share on reddit</a>
+                </p>
+            </div>
+            <div class="column is-9-desktop is-12-tablet is-12-mobile">
+                <pre><code class="html">
+    &lt;html&gt;
+        &lt;head&gt;
+            ...
+        &lt;/head&gt;
+        &lt;body&gt;
+        ...
+        &lt;button onclick="Share.reddit(); return false;"&gt; Share on reddit &lt;/button&gt;
+
+        &lt;a href="" onclick="Share.reddit();"&gt; Share on reddit &lt;/a&gt;
+        ...
+        &lt;/body&gt;
+    &lt;/html&gt;
+        </code></pre>
+                <br>
+                <pre><code class="html">
+    Share.reddit({
+        url: '', // default current location
+        title: '' // default title meta tag
+    });
+        </code></pre>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="StumbleUpon">
+    <div class="container">
+        <div class="columns is-mobile is-multiline">
+            <div class="column is-3-desktop is-12-tablet is-12-mobile">
+                <h2 class="title">StumbleUpon</h2>
+                <p>
+                    <button class="button is-primary" onclick="Share.stumbleUpon()">Share on stumbleUpon</button>
+                </p>
+                <br>
+                <p>
+                    <a href="" onclick="Share.stumbleUpon(); return false;">Share on stumbleUpon</a>
+                </p>
+            </div>
+            <div class="column is-9-desktop is-12-tablet is-12-mobile">
+                <pre><code class="html">
+    &lt;html&gt;
+        &lt;head&gt;
+            ...
+        &lt;/head&gt;
+        &lt;body&gt;
+        ...
+        &lt;button onclick="Share.stumbleUpon(); return false;"&gt; Share on stumbleUpon &lt;/button&gt;
+
+        &lt;a href="" onclick="Share.stumbleUpon();"&gt; Share on stumbleUpon &lt;/a&gt;
+        ...
+        &lt;/body&gt;
+    &lt;/html&gt;
+        </code></pre>
+                <br>
+                <pre><code class="javascript">
+    Share.stumbleUpon({
+        url: '', // default current location
+        title: '' // default title meta tag
+    });
+        </code></pre>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="Evernote">
+    <div class="container">
+        <div class="columns is-mobile is-multiline">
+            <div class="column is-3-desktop is-12-tablet is-12-mobile">
+                <h2 class="title">Evernote</h2>
+                <p>
+                    <button class="button is-primary" onclick="Share.evernote()">Share on evernote</button>
+                </p>
+                <br>
+                <p>
+                    <a href="" onclick="Share.evernote(); return false;">Share on evernote</a>
+                </p>
+            </div>
+            <div class="column is-9-desktop is-12-tablet is-12-mobile">
+                <pre><code class="html">
+    &lt;html&gt;
+        &lt;head&gt;
+            ...
+        &lt;/head&gt;
+        &lt;body&gt;
+        ...
+        &lt;button onclick="Share.evernote(); return false;"&gt; Share on evernote &lt;/button&gt;
+
+        &lt;a href="" onclick="Share.evernote();"&gt; Share on evernote &lt;/a&gt;
+        ...
+        &lt;/body&gt;
+    &lt;/html&gt;
+        </code></pre>
+                <br>
+                <pre><code class="javascript">
+    Share.evernote({
+        url: '', // default current location
+        title: '' // default title meta tag
+    });
+        </code></pre>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="Email">
+    <div class="container">
+        <div class="columns is-mobile is-multiline">
+            <div class="column is-3-desktop is-12-tablet is-12-mobile">
+                <h2 class="title">Email</h2>
+                <p>
+                    <button class="button is-primary" onclick="Share.email()">Share on email</button>
+                </p>
+                <br>
+                <p>
+                    <a href="" onclick="Share.email(); return false;">Share on email</a>
+                </p>
+            </div>
+            <div class="column is-9-desktop is-12-tablet is-12-mobile">
+                <pre><code class="html">
+    &lt;html&gt;
+        &lt;head&gt;
+            ...
+        &lt;/head&gt;
+        &lt;body&gt;
+        ...
+        &lt;button onclick="Share.email(); return false;"&gt; Share on email &lt;/button&gt;
+
+        &lt;a href="" onclick="Share.email();"&gt; Share on email &lt;/a&gt;
+        ...
+        &lt;/body&gt;
+    &lt;/html&gt;
+        </code></pre>
+                <br>
+                <pre><code class="javascript">
+    Share.email({
+        url: '', // default current location
+        title: '', // default title meta tag
+        description: '' // default description meta tag
+    });
+        </code></pre>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="Wordpress">
+    <div class="container">
+        <div class="columns is-mobile is-multiline">
+            <div class="column is-3-desktop is-12-tablet is-12-mobile">
+                <h2 class="title">Wordpress</h2>
+                <p>
+                    <button class="button is-primary" onclick="Share.wordpress()">Share on wordpress</button>
+                </p>
+                <br>
+                <p>
+                    <a href="" onclick="Share.wordpress(); return false;">Share on wordpress</a>
+                </p>
+            </div>
+            <div class="column is-9-desktop is-12-tablet is-12-mobile">
+                <pre><code class="html">
+    &lt;html&gt;
+        &lt;head&gt;
+            ...
+        &lt;/head&gt;
+        &lt;body&gt;
+        ...
+        &lt;button onclick="Share.wordpress(); return false;"&gt; Share on wordpress &lt;/button&gt;
+
+        &lt;a href="" onclick="Share.wordpress();"&gt; Share on wordpress &lt;/a&gt;
+        ...
+        &lt;/body&gt;
+    &lt;/html&gt;
+        </code></pre>
+                <br>
+                <pre><code class="javascript">
+    Share.wordpress({
+        url: '', // default current location
+        title: '', // default title meta tag
+        description: '', // default description meta tag
+        image: '' // default image meta tag
+    });
+        </code></pre>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="Pocket">
+    <div class="container">
+        <div class="columns is-mobile is-multiline">
+            <div class="column is-3-desktop is-12-tablet is-12-mobile">
+                <h2 class="title">Pocket</h2>
+                <p>
+                    <button class="button is-primary" onclick="Share.pocket()">Share on pocket</button>
+                </p>
+                <br>
+                <p>
+                    <a href="" onclick="Share.pocket(); return false;">Share on pocket</a>
+                </p>
+            </div>
+            <div class="column is-9-desktop is-12-tablet is-12-mobile">
+                <pre><code class="html">
+    &lt;html&gt;
+        &lt;head&gt;
+            ...
+        &lt;/head&gt;
+        &lt;body&gt;
+        ...
+        &lt;button onclick="Share.pocket(); return false;"&gt; Share on pocket &lt;/button&gt;
+
+        &lt;a href="" onclick="Share.pocket();"&gt; Share on pocket &lt;/a&gt;
+        ...
+        &lt;/body&gt;
+    &lt;/html&gt;
+        </code></pre>
+                <br>
+                <pre><code class="javascript">
+    Share.pocket({
+        url: '', // default current location
+        title: '' // default title meta tag
+    });
+        </code></pre>
+            </div>
+        </div>
     </div>
 </section>
 

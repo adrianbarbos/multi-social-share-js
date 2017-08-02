@@ -24,7 +24,7 @@ var Share = {
                 url: data.url,
                 text: data.title,
                 via: data.via,
-                hashtags: data.hashtags,
+                hashtags: data.hashtags
             }
         );
 
