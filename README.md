@@ -1,7 +1,7 @@
 # multi-social-share-js
 Simple dependency free multi social share script
 
-#Supported share types
+# Supported share types
 - Facebook
 - Twitter
 - Google
@@ -16,17 +16,17 @@ Simple dependency free multi social share script
 - Wordpress
 - Pocket
 
-#Usage
+# Usage
 ```javascript
 Share.facebook();
 ```
-###Button
+### Button
 
 ```html
 <button onclick="Share.facebook()">Share</button>
 ```
 
-###Anchor tag
+### Anchor tag
 ```html
 <a href="" onclick="Share.facebook(); return false;">Share</button>
 ```
