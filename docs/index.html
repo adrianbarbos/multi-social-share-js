@@ -7,10 +7,235 @@
     <title>Docs - Multi Social Share JS</title>
 
 
-    <link rel="stylesheet" href="/docs/css/bulma.min.css">
+    <link rel="stylesheet" href="/css/default.min.css">
+    <link rel="stylesheet" href="/css/bulma.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <script src="/js/clipboard.min.js"></script>
+    <script src="/js/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
 
-<script src="../multi-social-share.js"></script>
+<section class="hero is-primary is-small">
+    <!-- Hero header: will stick at the top -->
+    <div class="hero-head">
+        <header class="nav">
+            <div class="container">
+
+                    <span class="nav-toggle" id="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+                <div class="nav-right nav-menu" id="nav-menu">
+                    <a href="#instalation" class="nav-item">
+                        Instalation
+                    </a>
+                    <a href="#override-params" class="nav-item">
+                        Override params
+                    </a>
+                    <a class="nav-item">
+                        Examples
+                    </a>
+                    <a class="nav-item">
+                        Download
+                    </a>
+                    <span class="nav-item">
+                            <a class="button is-primary is-inverted">
+                              <span class="icon">
+                                <i class="fa fa-github"></i>
+                              </span>
+                              <span>View on Github</span>
+                            </a>
+                        </span>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 class="title">
+                Multi Social Share JS
+            </h1>
+            <h2 class="subtitle">
+                Simple dependency free multi social share script
+            </h2>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="instalation">
+    <div class="container">
+        <h2 class="title">Instalation</h2>
+
+        <br>
+
+        <h2 class="subtitle">Add meta tags</h2>
+        <pre><code class="html">
+    &lt;html&gt;
+        &lt;head&gt;
+            ...
+            &lt;meta name="title" content=""/&gt;
+            &lt;meta name="image" content=""/&gt;
+            &lt;meta name="description" content=""&gt;
+            &lt;meta name="app-name" content=""/&gt;
+            &lt;meta name="app-hash-tags" content=""/&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        ...
+        &lt;/body&gt;
+    &lt;/html&gt;
+        </code></pre>
+
+        <br>
+
+        <h2 class="subtitle">Add script</h2>
+        <pre><code class="html">
+    &lt;html&gt;
+        &lt;head&gt;
+            ...
+        &lt;/head&gt;
+        &lt;body&gt;
+        ...
+        &lt;script src="multi-social-share.js"&gt;&lt;/script&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+        </code></pre>
+
+        <br>
+
+        <h2 class="subtitle">Add share button or anchor tag</h2>
+        <pre><code class="html">
+    &lt;html&gt;
+        &lt;head&gt;
+            ...
+        &lt;/head&gt;
+        &lt;body&gt;
+        ...
+        &lt;button onclick="Share.facebook(); return false;"&gt; Share from button &lt;/button&gt;
+
+        &lt;a href="" onclick="Share.facebook();"&gt; Share from anchor tag &lt;/a&gt;
+        ...
+        &lt;/body&gt;
+    &lt;/html&gt;
+        </code></pre>
+    </div>
+</section>
+
+<section class="section" id="override-params">
+    <div class="container">
+        <h2 class="title">Override params</h2>
+
+        <br>
+        <pre><code class="javascript">
+    Share.facebook({
+        url: '', // default current location
+        title: '', // default title meta tag
+        description: '', // default description meta tag
+        image: '', // default image meta tag
+        via: '', // default app-name meta tag
+        hashtags: '', // default app-hash-tags meta tag
+    });
+        </code></pre>
+    </div>
+</section>
+
+
+
+<section class="section" id="examples">
+    <div class="container">
+        <h2 class="title">Examples</h2>
+
+        <div class="columns is-multiline is-mobile">
+
+            <div class="column is-2-desktop is-3-tablet is-6-mobile has-text-centered">
+                <a class="box" href="Facebook">
+                    Facebook
+                </a>
+            </div>
+
+            <div class="column is-2-desktop is-3-tablet is-6-mobile has-text-centered">
+                <a class="box" href="Twitter">
+                    Twitter
+                </a>
+            </div>
+
+            <div class="column is-2-desktop is-3-tablet is-6-mobile has-text-centered">
+                <a class="box" href="Google">
+                    Google
+                </a>
+            </div>
+
+            <div class="column is-2-desktop is-3-tablet is-6-mobile has-text-centered">
+                <a class="box" href="Pinterest">
+                    Pinterest
+                </a>
+            </div>
+
+            <div class="column is-2-desktop is-3-tablet is-6-mobile has-text-centered">
+                <a class="box" href="LinkedIn">
+                    LinkedIn
+                </a>
+            </div>
+
+            <div class="column is-2-desktop is-3-tablet is-6-mobile has-text-centered">
+                <a class="box" href="BufferApp">
+                    BufferApp
+                </a>
+            </div>
+
+            <div class="column is-2-desktop is-3-tablet is-6-mobile has-text-centered">
+                <a class="box" href="Tumblr">
+                    Tumblr
+                </a>
+            </div>
+
+            <div class="column is-2-desktop is-3-tablet is-6-mobile has-text-centered">
+                <a class="box" href="Reddit">
+                    Reddit
+                </a>
+            </div>
+
+            <div class="column is-2-desktop is-3-tablet is-6-mobile has-text-centered">
+                <a class="box" href="StumbleUpon">
+                    StumbleUpon
+                </a>
+            </div>
+
+            <div class="column is-2-desktop is-3-tablet is-6-mobile has-text-centered">
+                <a class="box" href="Evernote">
+                    Evernote
+                </a>
+            </div>
+
+            <div class="column is-2-desktop is-3-tablet is-6-mobile has-text-centered">
+                <a class="box" href="Email">
+                    Email
+                </a>
+            </div>
+
+            <div class="column is-2-desktop is-3-tablet is-6-mobile has-text-centered">
+                <a class="box" href="Wordpress">
+                    Wordpress
+                </a>
+            </div>
+
+            <div class="column is-2-desktop is-3-tablet is-6-mobile has-text-centered">
+                <a class="box" href="Pocket">
+                    Pocket
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+<script src="/js/bulma.js"></script>
+<script src="/js/multi-social-share.js"></script>
+
+
 </body>
 </html>
