@@ -1,4 +1,4 @@
-# multi-social-share-js
+# Multi social share js
 Simple dependency free multi social share script
 
 # Supported share types
