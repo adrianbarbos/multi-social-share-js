@@ -28,5 +28,5 @@ Share.facebook();
 
 ### Anchor tag
 ```html
-<a href="" onclick="Share.facebook(); return false;">Share</button>
+<a href="" onclick="Share.facebook(); return false;">Share</a>
 ```
