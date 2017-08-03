@@ -163,7 +163,7 @@ var Share = {
             }
         );
 
-        Share.showPopup(link, 10, 10);
+       window.location.href = link;
     },
 
 
